@@ -1,0 +1,99 @@
+
+@import "tailwindcss";
+@plugin "daisyui";
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+body{
+  margin: 0;
+}
+
+.navbar {
+  background: linear-gradient(to right, #3b82f6, #9333ea); 
+  padding: 1rem; 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+}
+
+.navbar-container {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-blue {
+  filter: hue-rotate(180deg) saturate(2);
+}
+
+
+.navbar-logo {
+  color: white;
+  font-size: 1.5rem; 
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: #e5e7eb; 
+}
+
+
+.navbar-links {
+  display: flex;
+  gap: 1rem; 
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease; 
+}
+
+.navbar-link:hover {
+  color: #e5e7eb; 
+}
+
+.home-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #eff6ff, #f3e8ff); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: bold; 
+  color: #1e3a8a; 
+  margin-bottom: 1rem; 
+}
+
+.home-description {
+  font-size: 1.25rem; 
+  color: #374151; 
+}
+.about-container {
+  width: 100%;
+  min-height: 100vh; 
+  background: linear-gradient(to bottom, #f5f3ff, #dbeafe); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4c1d95; 
+  margin-bottom: 1rem; 
+}
+
+.about-description {
+  font-size: 1.25rem;
+  color: #374151; 
+}
+
